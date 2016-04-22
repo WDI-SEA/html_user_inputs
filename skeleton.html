@@ -1,34 +1,77 @@
-general_assembly_logo.png
-
-General Assembly Account Creation
-
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
-
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
-
-City:
-  Seattle
-  Portland
-  Los Angeles
-  San Francisco
-  London
-  New York
-  Hong Kong
-
-Course:
-  (0) UX
-  ( ) Web Dev
-
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>General Assembly Account Creation</title>
+	</head>
+	<body>
+		<img src="general_assembly_logo.png" alt="General Assembly logo">
+		<h1>General Assembly Account Creation</h1>
+		<p>
+			Welcome to the General Assembly. General Assembly is a global
+			institution training people all over the world in today's top
+			technologies. 
+		</p>
+		<p>
+			Please fill out the information below to create your General Assembly
+			account. Let us know what city you're in and what course
+			you're taking. This list is for all students. Please tell us what
+			city you're in and whether you're taking the Immersive User Experience (UX)
+			course or the Immersive Web Development course. 
+		</p>
+		<form action="success.html">
+			<div>
+				<label>Cities:</label>
+					<select>
+					  <optgroup label="US">
+					    <option>Seattle</option>
+					    <option>Oregon</option>
+					    <option>Los Angeles</option>
+					    <option>San Francisco</option>
+					    <option>New York</option>
+					  </optgroup> 
+					  <optgroup label="Eurpose">
+					    <option>London</option>
+					  </optgroup>
+					  <optgroup label="Asia">
+					    <option>Hong Kong</option>
+					  </optgroup>
+					</select>
+			</div>
+			<br>
+			<div>
+				<label>Course:</label>
+				  	<label>
+				  		<input type="radio" name="Course" value="UX">UX
+				  	</label>
+				  	<label>
+				  		<input type="radio" name="Course" value="Web Dev" checked>Web Dev
+				  	</label>
+			</div>
+			<br>
+			<div>
+				<label>Name:</label>
+			  		<input type="text" name="Name">
+			</div>
+			<br>
+			<div>
+				<label>Email:</label>
+					<input type="text" name="Email">
+			</div>
+			<br>
+			<div>
+				<label>Password:</label>
+					<input type="password" name="Password">
+			</div>
+			<br>
+			<div>
+				<label>
+					<input type="checkbox" value="Yes" checked> Yes, subscribe me to the General Assembly student newsletter
+				</label>
+			</div>
+			<br>
+			<div>
+				<input type="submit" value="Subscribe">
+			</div>
+		</form>
+	</body>
+</html>
