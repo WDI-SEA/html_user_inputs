@@ -1,34 +1,62 @@
-general_assembly_logo.png
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>General Assembly Account Creation</title>
+</head>
 
-General Assembly Account Creation
+<body>
+<img src="general_assembly_logo.png">
 
-Welcome to the General Assembly. General Assembly is a global
+<h1>General Assembly Account Creation</h1>
+
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
 technologies.
-
+<br>
+<br>
 Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
-
+course or the Immersive Web Development course. </p>
+<br>
 City:
-  Seattle
-  Portland
-  Los Angeles
-  San Francisco
-  London
-  New York
-  Hong Kong
+<select name="selectBox">
+  <option value="Seattle">Seattle</option>
+  <option value="Los Angeles">Los Angeles</option>
+  <option value="San Francisco">San Francisco</option>
+  <option value="London">London</option>
+  <option value="New York">New York</option>
+  <option value="Hong Kong">Hong Kong</option>
+</select>
+<br>
+<br>
+<form method="post">
+<label for="course">Course:</label>
+	<input id="completed" type="radio" value="UX"> UX
+	<input id="completed" type="radio" value="Web Dev" checked> Web Dev
 
-Course:
-  (0) UX
-  ( ) Web Dev
-
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+</form>
+<br>
+<form method="post">
+	<label for="firstname"> Name</label>
+	<input id="firstname" type="text" value="Name">
+</form>
+<br>
+<form method="post">
+	<label for="Email">Email</label>
+	<input id="email" type="text" value="Email">
+</form>
+<br>
+<form method="post">
+	<label for="password">Password</label>
+	<input id="email" type="text" value="*******">
+</form>
+<br>
+<form method="post">
+	<input id="completed" type="CheckBox" value="Yes" Checked> Yes, subscribe me to the General Assembly student newsletter
+</form>
+<br>
+<input type="submit" value="Subscribe">
+</body>
+</html>
