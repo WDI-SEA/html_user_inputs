@@ -1,34 +1,53 @@
-general_assembly_logo.png
-
-General Assembly Account Creation
-
-Welcome to the General Assembly. General Assembly is a global
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General Assembly Account Creation</title>
+</head>
+<body>
+<img src="general_assembly_logo.png">
+<br>
+<h1>General Assembly Account Creation</h1>
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
-technologies.
-
-Please fill out the information below to create your General Assembly
+technologies.</p>
+<p>Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+course or the Immersive Web Development course. </p>
+<br>
+<select name="cars">
+  <option value="seattle">Seattle</option>
+  <option value="portland">Portland</option>
+  <option value="losAngeles">Los Angeles</option>
+  <option value="sanFrancisco">San Francisco</option>
+  <option value="london">London</option>
+  <option value="newYork">New York</option>
+  <option value="hongKong">Hong Kong</option>
+</select>
+<br><br>
+<form>
+  <input type="radio" name="ux" value="">UX<br>
+  <input type="radio" name="webdev" value="" checked="checked">Web Dev<br>
+  
+</form>
+<br>
 
-City:
-  Seattle
-  Portland
-  Los Angeles
-  San Francisco
-  London
-  New York
-  Hong Kong
+<form method="post">
+	<label for="firstName">First Name</label>
+	<input id="firstName" type="text" value="">
+	<br><br>
+	<label for="Email">Email</label>
+	<input id="Email" type="text" value="">
+	<br><br>
+	<label for="Password">Password</label>
+	<input id="Password" type="text" value="">
+	<br><br>
+	<input type="checkbox" name="" checked="checked">Yes, subscribe me to the General Assembly Newsletter
 
-Course:
-  (0) UX
-  ( ) Web Dev
+	<br><br>
+	<input type="submit" value="Subscribe">
+</form>
 
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+</body>
+</html>
