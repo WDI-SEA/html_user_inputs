@@ -1,34 +1,58 @@
-general_assembly_logo.png
 
-General Assembly Account Creation
+<img src="general_assembly_logo.png" alt="General Assembly">
 
-Welcome to the General Assembly. General Assembly is a global
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>General Assembly Account Creation</title>
+</head>
+<body>
+ <h1>General Assembly Account Creation</h1>
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
-technologies.
+technologies.</p>
 
-Please fill out the information below to create your General Assembly
+<p>Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+course or the Immersive Web Development course.</p>
 
-City:
-  Seattle
-  Portland
-  Los Angeles
-  San Francisco
-  London
-  New York
-  Hong Kong
+<label for="dropdown">City</label>
+<select name="selectCity">
+	<option value="seattle">Seattle</option>
+	<option value="portland">Portland</option>
+	<option value="los-angeles">Los Angeles</option>
+	<option value="san-francisco">San Francisco</option>
+	<option value="london">London</option>
+	<option value="new-york">New York</option>
+	<option value="hong-kong">Hong Kong</option>
+</select>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+<br>
+<br>
+<br>
 
-Name:     _________
-Email:    _________
-Password: *********
+<label for="dropdown">Course:</label>
+<form action="">
+  <input type="radio" name="class" value="ux">UX<br>
+  <input type="radio" name="gender" value="web-dev" checked="checked">Web Dev<br>
+</form>
 
-[] Yes, subscribe me to the General Assembly student newsletter
 
-[Subscribe]
+<form action="demo_form" method="post">
+ Name: <input type="text" name="name"><br>
+ Email: <input type="text" name="email"><br>
+ Password: <input type="password" name="password"><br>
+
+<br>
+
+<input type="checkbox" name="vehicle" value="Car">Yes, subscribe me to the General Assembly student newsletter<br>
+<br>
+<input type="submit" value="Subscribe">
+</form>
+
+</body>
