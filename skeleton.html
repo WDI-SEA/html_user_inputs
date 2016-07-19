@@ -1,34 +1,75 @@
-general_assembly_logo.png
-
-General Assembly Account Creation
-
-Welcome to the General Assembly. General Assembly is a global
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General Assembly Account Creation</title>
+	<img src= "general_assembly_logo.png">
+	<h1>General Assembly Account Creation</h1>
+</head>
+<body>
+	<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
-technologies.
+technologies.</p>
 
-Please fill out the information below to create your General Assembly
+	<p>Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+course or the Immersive Web Development course. </p>
+</body>
 
-City:
-  Seattle
-  Portland
-  Los Angeles
-  San Francisco
-  London
-  New York
-  Hong Kong
 
+
+
+
+City:<select name="selectBox">
+  <option value="Seattle">Seattle</option>
+  <option value="Portland">Portland</option>
+  <option value="Los Angeles">Los Angeles</option>
+  <option value="San Francisco">San Francisco</option>
+  <option value="London">London</option>
+  <option value="New York">New York</option>
+  <option value="Hong Kong">Hong Kong</option>
+</select>
+
+<br>
+<br>
+
+<form action= "success.html" method="post">
 Course:
-  (0) UX
-  ( ) Web Dev
+<input type= "radio" name="course" value="UX" value= ""checked>UX
 
-Name:     _________
-Email:    _________
-Password: *********
+<input type= "radio" name="course" value="Web Dev">Web Dev
 
-[] Yes, subscribe me to the General Assembly student newsletter
+<br>
+<br>
 
-[Subscribe]
+<form method="post">
+  <label for="name">Name</label>
+  <input id="name" type= "text">
+
+<br>
+<br>
+
+<form method="post">
+  <label for="email">Email</label>
+  <input id="email" type= "text">
+
+<br>
+<br>
+
+<form method="post">
+  <label for="password">Password</label>
+  <input id="password" type= "password">
+
+<br>
+<br>
+
+<label>
+	<input type="checkbox" id="cbox1" value="first_checkbox" value= ""checked>Yes, subscribe me to the General Assembly student newsletter</label>
+<br>
+<br>
+<input type="submit" value="Subscribe">
+
+</form>
+
+</html>
