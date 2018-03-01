@@ -1,10 +1,21 @@
-general_assembly_logo.png
+<!DOCTYPE html>
+<html>
+<head>
+  <img src="general_assembly_logo.png">
+  <title>General Assembly Account Creation</title>
+</head>
+<body>
 
-General Assembly Account Creation
+</body>
+</html>
 
-Welcome to the General Assembly. General Assembly is a global
+<h1>General Assembly Account Creation</h1>
+
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
 technologies.
+
+<br><br>
 
 Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
@@ -12,24 +23,47 @@ you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
 course or the Immersive Web Development course. 
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+</p>
+<form action="file://localhost/Users/chuazhengwin/html_user_inputs/skeleton.html">
+  City: <select name="City">
+    <option value="Hong Kong">Hong Kong</option>
+    <option value="London">London</option>
+    <option value="Los Angeles">Los Angeles</option>
+    <option value="New York">New York</option>    
+    <option value="Portland">Portland</option>
+    <option value="San Francisco">San Francisco</option>
+    <option value="Seattle">Seattle</option>
+    <option value="Singapore">Singapore</option>
+
+  </select>
+  <br><br>
+ </form>
 
 Course:
-  (0) UX
-  ( ) Web Dev
+<INPUT TYPE="radio" NAME="Course" VALUE="UX">UX
+<INPUT TYPE="radio" NAME="Course" VALUE="Web Dev" checked="checked">Web Dev
+<br><br>
 
-Name:     _________
-Email:    _________
-Password: *********
+<form action="file://localhost/Users/chuazhengwin/html_user_inputs/skeleton.html">
+  Name:
+  <input name="name" type="text">
+  <br><br>
+</form>
 
-[] Yes, subscribe me to the General Assembly student newsletter
+<form action="file://localhost/Users/chuazhengwin/html_user_inputs/skeleton.html">
+  Email:
+  <input email="Email" type="text">
+  <br><br>
+</form>
 
-[Subscribe]
+<form action="file://localhost/Users/chuazhengwin/html_user_inputs/skeleton.html">
+  Password:
+  <input password="Password" type="password">
+  <br><br>
+</form>
+
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="subscribe" value="subscribe" checked="checked"> Yes, subscribe me to the General Assembly student newsletter<br><br>
+  <input type="submit" value="Subscribe">
+</form>
+
