@@ -1,35 +1,59 @@
-general_assembly_logo.png
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>General Assembly Account Creation</title>
+    <img src="general_assembly_logo.png" alt="Logo">
+  </head>
+  <body>
+    <form  action="success.html" method="get">
+      <div class="blocks">
+        <h1>General Assembly Account Creation</h1>
+      </div>
+      <div class="blocks">
+        <p>Welcome to the General Assembly. General Assembly is a global
+        institution training people all over the world in today's top
+        technologies.<br><br>
+        Please fill out the information below to create your General Assembly
+        account. Let us know what city you're in and what course
+        you're taking. This list is for all students. Please tell us what
+        city you're in and whether you're taking the Immersive User Experience (UX)
+        course or the Immersive Web Development course.
+      </p>
+      </div>
+      <div class="blocks">
+        <select class="cities" name="cities-names">
+          <option value="1">Hong Kong</option>
+          <option value="2">London</option>
+          <option value="3">Los Angeles</option>
+          <option value="4">New York</option>
+          <option value="5">San Francisco</option>
+          <option value="6">Seattle</option>
+          <option value="7">Singapore</option>
+        </select>
+      </div>
+      <div class="blocks">
+        <input type="radio" name="course" value="ux">UX
+        <input type="radio" name="course" value="wd" value="" checked="checked">Web Dev
+      </div>
 
-General Assembly Account Creation
-
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
-
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
-
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
-
-Course:
-  (0) UX
-  ( ) Web Dev
-
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+        <div class="personal-data">
+          <label for="firstname">First Name </label>
+          <input type="text" name="firstname"  placeholder="Write your First name Here">
+        </div>
+        <div class="personal-data">
+          <label for="email">Email </label>
+          <input type="email" name="email"  placeholder="Write your email Here">
+        </div>
+        <div class="personal-data">
+          <label for="password">Password </label>
+          <input type="password" name="password"  placeholder="Create a Password">
+        </div>
+        <div class="personal-data">
+          <input type="radio" name="subscribe" value="" checked="checked" >
+          <label for="subscribe">Yes, subscribe me to the General Assembly student newsletter </label>
+        </div>
+       <input type="submit" name="" value="Subscribe">
+    </form>
+  </body>
+</html>
