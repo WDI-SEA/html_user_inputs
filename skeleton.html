@@ -1,47 +1,102 @@
-general_assembly_logo.png
-
-General Assembly Account Creation
-
-Welcome to the General Assembly. General Assembly is a global
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Assembly Account Creation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+    <img src='general_assembly_logo.png' alt='general assembly logo'>
+    <h1>General Assembly Account Creation</h1>
+    </header>
+    <div>
+    <p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
-technologies.
-
-Please fill out the information below to create your General Assembly
+technologies.</p>
+    <p>Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience Design (UXDI)
-course, the Immersive Software Engineering course, or the Immersive Data Science course (DSI).
+course, the Immersive Software Engineering course, or the Immersive Data Science course (DSI).</p>
+    </div>
+    <form action="#" method= "GET">
+      <div class="selectdiv">
+    <label>
+      Cities:
+      <select name="select-box" id="drop-downs btn" >
+        <option value="Atlanta">Atlanta</option>
+        <option value="Austin">Austin</option>
+        <option value="Boston">Boston</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Dallas">Dallas</option>
+        <option value="Denver">Denver</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="London">London</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Melbourne">Melbourne</option>
+        <option value="New York">New York</option>
+        <option value="Providence">Providence</option>
+        <option value="Riyadh">Riyadh</option>
+        <option value="San Francisco">San Francisco</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Stamford">Stamford</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Toronto">Toronto</option>
+        <option value="Washington DC">Washington DC</option>
+      </select>  
+    </label>
+    </div>      
 
-City:
-  Atlanta
-  Austin
-  Boston
-  Chicago
-  Dallas
-  Denver
-  Hong Kong
-  London
-  Los Angeles
-  Melbourne
-  New York
-  Providence
-  Riyadh
-  San Francisco
-  Seattle
-  Singapore
-  Stamford
-  Sydney
-  Toronto
-  Washington DC
+<!-- course radio -->
+    <div class="courses space">
+      <label>Course:</label>
+      <label>
+      <input type="radio" name ="course" value="UX">
+      UX
+      </label>
+      <label>
+      <input type="radio" name ="course" value="Web Dev" checked>
+      Web Dev
+      </label>
+    </div>
+<!-- name input -->
+  <!-- email input -->
+<!-- pw input -->
+      <div class="space">
+  <label for="name-field">Name</label>
+  <input id="name-field fill-ins" name="nameField" type="text" value="" required>
+      </div>
+      <div class="space">
+  <label for="e-field">Email</label>
+  <input id="e-field  fill-ins" name="eField" type="email" value="" required>     
+      </div>
+      <div class="space">
+  <label for="hidden-pw">Password</label>
+  <input id="hidden-pw  fill-ins" name="hiddenPassword" type="password" value="" minlength="8" required>  
+      </div>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+      <div class="space">
+  <label>
+    <input type="checkbox" checked="checked" name="subscribe">
+    Yes, subscribe me to the General Assembly student newsletter
+  </label>
+      </div>
+<!-- subscribe dqarethats already picked input -->
+<!-- subscribe button -->
+      <div class="container space">
+      <input type="submit" value="subscribe" id="sub-button">
+      </div>
 
-Name:     _________
-Email:    _________
-Password: *********
+    </form>
 
-[] Yes, subscribe me to the General Assembly student newsletter
+  </main>
 
-[Subscribe]
+</body>
+</html>
+
+
