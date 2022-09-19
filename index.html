@@ -18,11 +18,12 @@
         account. Let us know what city you're in and what course
         you're taking. This list is for all students. Please tell us what
         city you're in and whether you're taking the Immersive User Experience Design (UXDI)
-        course, the Immersive Software Engineering course, or the Immersive Data Science course (DSI).</p>
+        course, the Immersive Software Engineering course, or the Immersive Data Science course (DSI).
     
-
+    </p>
+    <form action="/success.html">
     <p>City: 
-        <select name="City" id="">
+        <select name="City">
             <option value="Atlanta">Atlanta</option>
             <option value="Austin">Austin</option>
             <option value="Boston">Boston</option>
@@ -46,8 +47,8 @@
         </select>
     </p>
     <p>Course: 
-        <input type="radio" name="course" value="UX" checked>UX
-        <input type="radio" name="course" value="webDev">Web Dev
+        <input type="radio" name="course" value="UX">UX
+        <input type="radio" name="course" value="webDev" checked>Web Dev
     </p>
     <p>Name 
         <input type="text" name="name">
@@ -59,8 +60,12 @@
         <input type="password" name="email">
     </p>
     <p>
-        <input type="checkbox" name="subscribe" id="">Yes, subscribe me to the General Assembly student newsletter
+        <input type="checkbox" name="subscribe" checked>Yes, subscribe me to the General Assembly student newsletter
     </p>
-    <a href="/success.html"><button> Subscribe</button></a>
+    <p>
+        <input type="submit" value="Subscribe"> 
+    </p>
+
+    </form>
 </body>
 </html>
